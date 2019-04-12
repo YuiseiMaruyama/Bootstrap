@@ -1,4 +1,4 @@
-<!--  #16 タブメニューを作っていこう -->
+<!--  #17 タブメニューを完成させよう -->
 
 <!-- Bootstrapの利点としてstyle.cssに記述しなくてもHTML内でcssの機能を実装できる -->
 
@@ -86,16 +86,20 @@
         </section class="py-5">
         <h2 class="mb-5 text-center">How to use</h2>
         <div class="container">
-            <ul>
-                <li><a href="#ios">iOS</a></li>
-                <li><a href="#android">Android</a></li>
+            <ul class="nav nav-tabs">
+                <!-- active : 選択中に設定 -->
+                <li class="nav-item"><a href="#ios" class="nav-link active" data-toggle="tab">iOS</a></li>
+                <li class="nav-item"><a href="#android" class="nav-link" data-toggle="tab">Android</a></li>
             </ul>
-            <div id="ios">
-                <p>Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. </p>
+            <div class="tab-content py-4">
+                    <div id="ios" class="tab-pane active">
+                            <p>Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. Hello iOS. </p>
+                        </div>
+                        <div id="android" class="tab-pane">
+                            <p>Hello Android. Hello Android. Hello Android. Hello Android. Hello Android.</p>
+                        </div>
             </div>
-            <div id="android">
-                <p>Hello Android. Hello Android. Hello Android. Hello Android. Hello Android.</p>
-            </div>
+            
         </div>
         <section>
 

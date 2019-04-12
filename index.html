@@ -1,4 +1,4 @@
-<!-- #06 paddingやmarginを操作しよう -->
+<!-- #08 ボタンを作ってみよう -->
 
 <!-- Bootstrapの利点としてstyle.cssに記述しなくてもHTML内でcssの機能を実装できる -->
 <!doctype html>
@@ -13,47 +13,13 @@
 
     <title>Hello, world!</title>
     <style>
-        .box-container{
-            width: 100px;
-            height: 100px;
-            background: #ddd;
-            margin-bottom: 5px;
-        }
+
     </style>
   </head>
   <body>
-    <!-- 
-    [p|m][location]-[size]
-
-    p:padding
-    m:margin
-
-    location:
-    -t:top
-    -b:bottom
-    -l:left
-    -r:right
-    -x:x方向
-    -y:y方向
-
-    size:
-    -0:0
-    -1:0.25rem
-    -2:0.5rem
-    -3:1.0rem
-    -4:1.5rem
-    -5:3.0rem
-    -auto
-     
--->
-
-    <div class="box-container">
-        <div class="bg-primary w-25 h-50 pt-3">BOX</div>
-    </div>
-
-    <div class="box-container">
-            <div class="bg-success w-75 h-100 my-0 mx-auto">BOX</div>
-        </div>
+    <button class="btn btn-primary">OK</button>
+    <button class="btn btn-info btn-sm">OK</button>
+    <button class="btn btn-danger btn-lg">OK</button>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

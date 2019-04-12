@@ -1,4 +1,4 @@
-<!-- #09 グリッドレイアウトに慣れよう -->
+<!-- #10 レスポンシブの仕組みを理解しよう -->
 
 <!-- Bootstrapの利点としてstyle.cssに記述しなくてもHTML内でcssの機能を実装できる -->
 <!doctype html>
@@ -17,44 +17,18 @@
     </style>
   </head>
   <body>
-        container:全体をある程度の幅に揃えて、中央揃えにする
+      <!-- 
+        576px and up: sm
+        768px and up: md
+        992px and up: lg
+        1200px and up: xl -->
+
+        <!-- container:全体をある程度の幅に揃えて、中央揃えにする -->
     <div class="container">
         <div class="row">
-            <div class="col bg-primary">1</div>
-            <div class="col bg-secondary">2</div>
-            <div class="col bg-info">3</div>
+            <div class="col-10 bg-primary">1</div>
+            <div class="col-2 bg-secondary">2</div>    
         </div>
-
-        <div class="row mb-3">
-                <div class="col bg-danger">1</div>
-                <div class="col bg-warning">2</div>
-                <div class="col bg-dark">3</div>
-            </div>
-
-        <div class="row">
-                    <div class="col-8 bg-primary">1</div>
-                    <div class="col-4 bg-secondary">2</div>
-        </div>
-        
-        <div class="row mb-3">
-                        <div class="col-4 bg-danger">1</div>
-                        <div class="col-6 bg-warning">2</div>
-                        <div class="col-2 bg-dark">3</div>
-        </div>
-
-
-        <div class="row">
-                <div class="col-8 bg-primary">1</div>
-                <div class="col-1 bg-secondary">2</div>
-                
-    </div>
-    
-    <div class="row mb-3">
-                    <div class="col-4 bg-danger">1</div>
-                    <div class="col-6 bg-warning">2</div>
-                    <div class="col-6 bg-dark">3</div>
-    </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

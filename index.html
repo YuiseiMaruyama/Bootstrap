@@ -1,4 +1,4 @@
-<!--  #19 ツールチップを作ろう -->
+<!--  #21 ハンバーガーメニューを作ろう -->
 
 <!-- Bootstrapの利点としてstyle.cssに記述しなくてもHTML内でcssの機能を実装できる -->
 
@@ -32,6 +32,26 @@
   </head>
   <body>
       <header>
+          <div class="container">
+                <!-- navbar-expand-sm : sm以上だとexpand -->
+              <nav class="navbar navbar-expand-sm navbar-light">
+                  <a href="" class="navbar-brand">Logo</a>
+                  <!-- data-toggle="collapse" : 広い画面の時はハンバーガーメニューを隠す -->
+                  <!-- data-target="#menu" : 開くメニューを指定 -->
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                        <!-- navbar-toggler-icon : ハンバーガーメニューのアイコンを作成 -->
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                                <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+                                <li class="nav-item"><a href="" class="nav-link">Link</a></li>
+                            </ul>
+                  </div>
+                  
+              </nav>
+          </div>
             <!-- py-5 : padding y座標の5   上下の余白をつける -->
         <div class="cover text-white text-center py-5">
             <!-- mb-4 : margin bottom 4 -->

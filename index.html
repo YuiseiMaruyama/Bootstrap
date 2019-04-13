@@ -1,4 +1,4 @@
-<!--  #21 ハンバーガーメニューを作ろう -->
+<!--  #22 アラートをつけてみよう -->
 
 <!-- Bootstrapの利点としてstyle.cssに記述しなくてもHTML内でcssの機能を実装できる -->
 
@@ -32,6 +32,13 @@
   </head>
   <body>
       <header>
+            <!-- rounded-0 : 角丸をなくす -->
+          <div class="alert alert-info text-center mb-0 rounded-0 alert-dismissible fade show">
+              News! News! News! News! News! News!
+              <button class="close" data-dismiss="alert">
+                  &times;
+              </button>
+          </div>
           <div class="container">
                 <!-- navbar-expand-sm : sm以上だとexpand -->
               <nav class="navbar navbar-expand-sm navbar-light">
